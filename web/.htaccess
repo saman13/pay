@@ -1,3 +1,1 @@
-RewriteEngine On
-        RewriteCond %{HTTP_HOST} !^www.payking.org$ [NC]
-        RewriteRule ^(.*)$ http://www.payking.org/$1 [L,R=301]
+aaaaaa
