@@ -1,3 +1,3 @@
-# Redirect non-www to www:
-RewriteCond %{HTTP_HOST} !^www\. [NC]
-RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+RewriteEngine On
+        RewriteCond %{HTTP_HOST} !^www.payking.org$ [NC]
+        RewriteRule ^(.*)$ http://www.payking.org/$1 [L,R=301]
