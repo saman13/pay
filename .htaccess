@@ -1,4 +1,4 @@
-#Force www:
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^payking.org [NC]
-RewriteRule ^(.*)$ http://www.payking.org/$1 [L,R=301,NC]
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} !^www.payking.org$ [NC]
+RewriteRule ^(.*)$ http://www.payking.org/$1 [L,R=301]
